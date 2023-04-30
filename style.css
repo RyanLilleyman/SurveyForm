@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-image: url(./surveyForm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-color:azure;
+    opacity: 50%;
+    z-index: -1;
+}
+
+
+form{
+    min-width: none;
+    max-width: 600px;
+    margin:auto;
+    background-color: #333333CC;
+    color: #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    padding:1em;
+}
+
+
+
+select, label{
+    display: block;
+    text-align: left;
+}
+
+select{
+    width:100%;
+}
+
+
+fieldset{
+    border:none;
+    padding:0.5em;
+}
+
+
+.inline{
+    width:unset;
+    font-size: 18px;
+}
+
+.roleLabel, .featureLabel, .improveLabel{
+    margin-bottom: 1em;
+}
+.roleSelect, .featureSelect{
+    font-size: 18px;
+}
+
+.name, .email, .password{
+    display: block;
+    font-size: 18px;
+    width:100%;
+    margin:1em auto;
+}
+
+
+input[type="radio"]{
+    width:unset;
+}
+
+.role{
+    width:100%;
+}
+
+textarea{
+    max-width:90%;
+    resize: vertical;
+}
+
